@@ -25,7 +25,7 @@
   "contributors": [],
   "dependencies": {},
   "deprecated": false,
-  "description": "A package that brings stock Zsh completions under the control of Zinit",
+  "description": "A package that brings stock Zsh completions under the control of ZI",
   "homepage": "https://github.com/z-shell/system-completions/",
   "keywords": [
     "completions",
@@ -39,12 +39,12 @@
       "plugin": "null",
       "version": "1.0.0"
     },
-    "zplugin-ices": {
+    "zi-ices": {
       "default": {
         "git": "",
         "lucid": "",
         "as": "completion",
-        "atclone": "print Installing system completions...; mkdir -p $ZPFX/funs; command cp -f $ZPFX/share/zsh/$ZSH_VERSION/functions/^_* $ZPFX/funs; zinit creinstall -q $ZPFX/share/zsh/$ZSH_VERSION/functions;",
+        "atclone": "print Installing system completions...; mkdir -p $ZPFX/funs; command cp -f $ZPFX/share/zsh/$ZSH_VERSION/functions/^_* $ZPFX/funs; zi creinstall -q $ZPFX/share/zsh/$ZSH_VERSION/functions;",
         "atpull": "%atclone",
         "atload": "fpath=( ${(u)fpath[@]:#$ZPFX/share/zsh/*} ); fpath+=( $ZPFX/funs );",
         "run-atpull": "",
