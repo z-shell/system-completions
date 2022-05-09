@@ -3,7 +3,7 @@
 <tr><td align="center">
 <a title="ZI" target="_self" href="https://github.com/z-shell/zi/">
 <h2><img align="center" style="width:60px;height:auto" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="ZI Logo" /></a>
-❮ ZI ❯ Package - System Completions </h2><h3> Builds and installs the newest Zsh (HEAD of the Git repository).</h3>
+❮ ZI ❯ Package - System Completions </h2><h3> Moves the stock Zsh completions under the control of ZI.</h3>
 </td></tr>
 <tr><td align="center"><h3>
 
@@ -17,35 +17,34 @@
 
 ## Available `pack''` invocations
 
-Moves the stock Zsh completions under the control of ZI. You can then
-selectively enable and disable the completions with `cenable` and `cdisable`.
+Moves the stock Zsh completions under the control of ZI.
+You can then selectively enable and disable the completions with `cenable` and `cdisable`.
 
-Example ZI invocations:
+### Default Profile
 
-```zsh
+```shell
 zi pack for system-completions
-
+```
+```shell
 # Utilize Turbo
 zi wait pack for system-completions
-
+```
+```shell
 # Utilize Turbo and initialize the completion system
 zi wait pack atload=+"zicompinit; zicdreplay" for system-completions
 ```
 
-### Default Profile
-
 The ZI command executed will be equivalent to:
 
-```zsh
+```shell
 zi id-as=system-completions wait as=completion lucid \
-    atclone='print Installing system completions...; \
-      mkdir -p $ZPFX/funs; \
-      command cp -f $ZPFX/share/zsh/$ZSH_VERSION/functions/^_* $ZPFX/funs; \
-      zi creinstall -q $ZPFX/share/zsh/$ZSH_VERSION/functions' \
-    atload='fpath=( ${(u)fpath[@]:#$ZPFX/share/zsh/*} ); \
-      fpath+=( $ZPFX/funs )' \
-    atpull="%atclone" run-atpull for \
-         z-shell/null
+  atclone='print Installing system completions...; \
+    mkdir -p $ZPFX/funs; \
+    command cp -f $ZPFX/share/zsh/$ZSH_VERSION/functions/^_* $ZPFX/funs; \
+    zi creinstall -q $ZPFX/share/zsh/$ZSH_VERSION/functions' \
+      atload='fpath=( ${(u)fpath[@]:#$ZPFX/share/zsh/*} ); fpath+=( $ZPFX/funs )' \
+        atpull="%atclone" nocompile run-atpull for \
+          z-shell/null
 ```
 
 ---
