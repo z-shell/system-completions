@@ -1,42 +1,24 @@
 {
-  "_from": "system-completions@^1.0.0",
-  "_id": "zsh-system-completions@1.0.0",
-  "_inBundle": false,
-  "_location": "/zsh-system-completions",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "system-completions@^1.0.0",
-    "name": "system-completions",
-    "escapedName": "system-completions",
-    "rawSpec": "^1.0.0",
-    "saveSpec": null,
-    "fetchSpec": "^1.0.0"
-  },
-  "_requiredBy": [],
-  "_spec": "system-completions@^1.0.0",
-  "_where": "/root/pkgs/pkg-system-completions",
-  "author": "Sebastian Gniazdowski",
-  "bugs": {
-    "url": "https://github.com/z-shell/system-completions/issues"
-  },
+  "name": "zsh-system-completions",
   "version": "1.0.0",
   "contributors": [],
   "dependencies": {},
   "deprecated": false,
   "description": "A package that brings stock Zsh completions under the control of ZI",
   "homepage": "https://github.com/z-shell/system-completions/",
+  "license": "MIT",
   "keywords": [
     "completions",
     "zsh"
   ],
-  "license": "MIT",
-  "name": "zsh-system-completions",
+  "author": "Sebastian Gniazdowski",
+  "bugs": {
+    "url": "https://github.com/z-shell/system-completions/issues"
+  },
   "zsh-data": {
     "plugin-info": {
       "user": "z-shell",
-      "plugin": "null",
+      "plugin": "0",
       "version": "1.0.0"
     },
     "zi-ices": {
