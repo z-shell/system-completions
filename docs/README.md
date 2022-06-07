@@ -1,17 +1,15 @@
-<div align="center"><table align="center">
-  <tr><td align="center">
-    <h1 align="center">
-      <a href="https://github.com/z-shell/zi">
-        <img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
-      </a>
-      ❮ ZI ❯ Package - System Completions
-    </h1><h2>
+<div align="center"><table><tr><td>
+  <h1><a href="https://github.com/z-shell/zi">
+    <img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" /></a>
+      ❮ ZI ❯ Package - System Completions </h1>
+<h2><p> Generates table of contents for markdown files inside local git repository. </p></h2>
+<h3 align="center">
 
 | **Package source:** | Tarball | Binary | Git | Node | Gem |        Mod         |
 | :-----------------: | :-----: | :----: | :-: | :--: | :-: | :----------------: |
 |     **Status:**     |   :x:   |  :x:   | :x: | :x:  | :x: | :heavy_check_mark: |
 
-</h2><h3> Generates table of contents for markdown files inside local git repository. </h3>
+</h3>
 <p><img align="center" src="https://user-images.githubusercontent.com/59910950/161076706-03d6fb67-e8a2-41ce-a6a8-f19db27b2ecb.png" alt="zi zsh system-completions package" width="100%" height="auto" /></p>
 </td></tr></table></div>
 
