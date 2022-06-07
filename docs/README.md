@@ -1,34 +1,35 @@
+<div align="center"><table align="center">
+  <tr><td align="center">
+    <h1 align="center">
+      <a href="https://github.com/z-shell/zi">
+        <img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
+      </a>
+      ❮ ZI ❯ Package - System Completions
+    </h1><h2>
 
-<div align="center"><table style="width:100%;height:auto">
-<tr><td align="center">
-<a title="ZI" target="_self" href="https://github.com/z-shell/zi/">
-<h2><img align="center" style="width:60px;height:auto" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="ZI Logo" /></a>
-❮ ZI ❯ Package - System Completions </h2><h3> Moves the stock Zsh completions under the control of ZI.</h3>
-</td></tr>
-<tr><td align="center"><h3>
-
-| **Package source:** | Tarball | Binary | Git | Node | Gem | Mod |
-| :-----------------: | :-----: | :----: | :-: | :--: | :-: | :-: |
+| **Package source:** | Tarball | Binary | Git | Node | Gem |        Mod         |
+| :-----------------: | :-----: | :----: | :-: | :--: | :-: | :----------------: |
 |     **Status:**     |   :x:   |  :x:   | :x: | :x:  | :x: | :heavy_check_mark: |
 
-</h3>
-  <img style="width:90%;height:auto" alt="z-shell_system-completions" src="https://user-images.githubusercontent.com/59910950/161076706-03d6fb67-e8a2-41ce-a6a8-f19db27b2ecb.png">
+</h2><h3> Generates table of contents for markdown files inside local git repository. </h3>
+<p><img align="center" src="https://user-images.githubusercontent.com/59910950/161076706-03d6fb67-e8a2-41ce-a6a8-f19db27b2ecb.png" alt="zi zsh system-completions package" width="100%" height="auto" /></p>
 </td></tr></table></div>
 
 ## Available `pack''` invocations
 
-Moves the stock Zsh completions under the control of ZI.
-You can then selectively enable and disable the completions with `cenable` and `cdisable`.
+Moves the stock Zsh completions under the control of ZI. You can then selectively enable and disable the completions with `cenable` and `cdisable`.
 
 ### Default Profile
 
 ```shell
 zi pack for system-completions
 ```
+
 ```shell
 # Utilize Turbo
 zi wait pack for system-completions
 ```
+
 ```shell
 # Utilize Turbo and initialize the completion system
 zi wait pack atload=+"zicompinit; zicdreplay" for system-completions
@@ -51,7 +52,7 @@ zi id-as=system-completions wait as=completion lucid \
 
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-The [ZI](https://github.com/z-shell/zi) zsh package that can use the NPM package registry to automatically:
+The [ZI](https://github.com/z-shell/zi) zsh package that can use the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
