@@ -1,17 +1,32 @@
-<div align="center"><table><tr><td>
-  <h1><a href="https://github.com/z-shell/zi">
-    <img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" /></a>
-      ❮ ZI ❯ Package - System Completions </h1>
-<h2><p> Generates table of contents for markdown files inside local git repository. </p></h2>
+<table align="center"><tr><td>
+<h1 align="center"><a href="https://github.com/z-shell/zi">
+  <p><img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
+  ❮ ZI ❯ Package - System Completions </p>
+</h1>
+<h2 align="center"><p> Generates table of contents for markdown files inside local git repository </p></h2>
 <h3 align="center">
-
-| **Package source:** | Tarball | Binary | Git | Node | Gem |        Mod         |
-| :-----------------: | :-----: | :----: | :-: | :--: | :-: | :----------------: |
-|     **Status:**     |   :x:   |  :x:   | :x: | :x:  | :x: | :heavy_check_mark: |
-
-</h3>
+<table>
+    <tr>
+        <td><b>Package source:</b></td>
+        <td>Tarball</td>
+        <td>Binary</td>
+        <td>Git</td>
+        <td>Node</td>
+        <td>Gem</td>
+        <td>Mod</td>
+    </tr>
+    <tr>
+        <td><b>Status:</b></td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️ (default)</td>
+    </tr>
+</table></h3>
 <p><img align="center" src="https://user-images.githubusercontent.com/59910950/161076706-03d6fb67-e8a2-41ce-a6a8-f19db27b2ecb.png" alt="zi zsh system-completions package" width="100%" height="auto" /></p>
-</td></tr></table></div>
+</td></tr></table><hr />
 
 ## Available `pack''` invocations
 
@@ -50,7 +65,7 @@ zi id-as=system-completions wait as=completion lucid \
 
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-The [ZI](https://github.com/z-shell/zi) zsh package that can use the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
+The [ZI](https://github.com/z-shell/zi) zsh package that uses the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
