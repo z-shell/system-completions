@@ -48,6 +48,11 @@ zi wait pack for system-completions
 zi wait pack atload=+"zicompinit; zicdreplay" for system-completions
 ```
 
+```shell
+# Utilize Turbo and initialize the completion with fast compinit
+zi wait pack atload=+"zicompinit_fast; zicdreplay" for system-completions
+```
+
 The ZI command executed will be equivalent to:
 
 ```shell
