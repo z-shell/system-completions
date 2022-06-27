@@ -1,9 +1,5 @@
 {
   "name": "zsh-system-completions",
-  "version": "1.0.0",
-  "contributors": [],
-  "dependencies": {},
-  "deprecated": false,
   "description": "A package that brings stock Zsh completions under the control of ZI",
   "homepage": "https://github.com/z-shell/system-completions/",
   "license": "MIT",
@@ -18,8 +14,7 @@
   "zsh-data": {
     "plugin-info": {
       "user": "z-shell",
-      "plugin": "0",
-      "version": "1.0.0"
+      "plugin": "0"
     },
     "zi-ices": {
       "default": {
