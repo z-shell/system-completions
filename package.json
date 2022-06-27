@@ -26,9 +26,9 @@
         "git": "",
         "lucid": "",
         "as": "completion",
-        "atclone": "+zi-message 'Installing system completions...'; command mkdir -p $ZPFX/completions; command cp -f $ZPFX/share/zsh/$ZSH_VERSION/functions/^_* $ZPFX/completions; zi creinstall -q $ZPFX/share/zsh/$ZSH_VERSION/functions;",
+        "atclone": "+zi-message 'Installing system completions...'; command mkdir -p ${ZPFX}/completions; command cp -f ${ZPFX}/share/zsh/${ZSH_VERSION}/functions/^_* ${ZPFX}/completions; zi creinstall -q ${ZPFX}/share/zsh/${ZSH_VERSION}/functions;",
         "atpull": "%atclone",
-        "atload": "fpath=( ${(u)fpath[@]:#$ZPFX/share/zsh/*} ); fpath+=( $ZPFX/completions );",
+        "atload": "fpath=( ${(u)fpath[@]:#${ZPFX}/share/zsh/*} ); fpath+=( ${ZPFX}/completions );",
         "run-atpull": "",
         "nocompile": "",
         "countdown": ""
