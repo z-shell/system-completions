@@ -56,12 +56,12 @@ The **Zi** command executed will be equivalent to:
 
 ```shell
 zi id-as=system-completions wait as=completion lucid \
-  atclone="+zi-message 'Installing system completions...'; \
-    command mkdir -p ${ZPFX}/completions; \
-    command cp -f ${ZPFX}/share/zsh/${ZSH_VERSION}/functions/^_* ${ZPFX}/completions; \
-    zi creinstall -q ${ZPFX}/share/zsh/${ZSH_VERSION}/functions;" \
-  atload="fpath=( ${(u)fpath[@]:#${ZPFX}/share/zsh/*} ); fpath+=( ${ZPFX}/completions );" \
-  atpull="%atclone" run-atpull nocompile countdown for \
+  atclone="+zi-message '+zi-message 'Installing System Completions...'; \
+  command mkdir -p ${ZPFX}/share/zsh/$ZSH_VERSION/completions; \
+  command cp -f /usr/share/zsh/functions/Completion/*/_*(.) ${ZPFX}/share/zsh/$ZSH_VERSION/completions; \
+  zi creinstall -q /usr/share/zsh/functions/Completion; zi cclear -q" \
+  atload="fpath=( ${(u)fpath[@]:#/usr/share/zsh/*} ); fpath+=( ${ZPFX}/share/zsh/$ZSH_VERSION/completions );" \
+  atpull="%atclone" run-atpull nocompile for \
     z-shell/0
 ```
 

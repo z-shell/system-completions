@@ -7,7 +7,6 @@
     "completions",
     "zsh"
   ],
-  "author": "Sebastian Gniazdowski",
   "bugs": {
     "url": "https://github.com/z-shell/system-completions/issues"
   },
@@ -21,12 +20,12 @@
         "git": "",
         "lucid": "",
         "as": "completion",
-        "atclone": "+zi-message 'Installing system completions...'; command mkdir -p ${ZPFX}/completions; command cp -f ${ZPFX}/share/zsh/${ZSH_VERSION}/functions/^_* ${ZPFX}/completions; zi creinstall -q ${ZPFX}/share/zsh/${ZSH_VERSION}/functions;",
+        "id-as": "system-completions",
+        "atclone": "+zi-message 'Installing System Completions...'; command mkdir -p ${ZPFX}/share/zsh/$ZSH_VERSION/completions; command cp -f /usr/share/zsh/functions/Completion/*/_*(.) ${ZPFX}/share/zsh/$ZSH_VERSION/completions; zi creinstall -q /usr/share/zsh/functions/Completion; zi cclear -q",
         "atpull": "%atclone",
-        "atload": "fpath=( ${(u)fpath[@]:#${ZPFX}/share/zsh/*} ); fpath+=( ${ZPFX}/completions );",
+        "atload": "fpath=( ${(u)fpath[@]:#/usr/share/zsh/functions/Completion/*} ); fpath+=( ${ZPFX}/share/zsh/$ZSH_VERSION/completions );",
         "run-atpull": "",
-        "nocompile": "",
-        "countdown": ""
+        "nocompile": ""
       }
     }
   }
